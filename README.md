@@ -89,9 +89,11 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
 ## Evaluation
 
 1. Hasil Performa dari 4 algoritma yang digunakan
+
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
 
 3. Feature Importance:
+
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
 5. Model Random Forest unggul dalam hal akurasi dan metrik evaluasi kelas positif (precision, recall, F1-score), sehingga direkomendasikan sebagai model utama untuk prediksi kualitas wine. Model lain seperti Gradient Boosting dan SVM juga memberikan hasil yang kompetitif, sedangkan Logistic Regression memiliki performa yang lebih rendah dalam mengenali wine berkualitas baik meskipun akurasinya masih cukup tinggi.
