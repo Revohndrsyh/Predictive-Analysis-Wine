@@ -102,6 +102,7 @@ Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Sup
 
 4. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
+
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
 6. Feature Importance dan Interpretabilitas
