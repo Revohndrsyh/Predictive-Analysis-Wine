@@ -92,7 +92,6 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
 ## Evaluation
 1. Model Machine learning untuk Prediksi Kualitas Wine 
 Berhasil dibangun model klasifikasi biner yang memprediksi wine berkualitas baik (label 1) dan buruk (label 0) menggunakan parameter kimiawi sebagai fitur input. Model ini mengubah data kualitas numerik menjadi kelas biner sesuai kebutuhan klasifikasi, sehingga menyederhanakan proses prediksi dan evaluasi
-
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
 
 3. Perbandingan Algoritma
@@ -103,13 +102,12 @@ Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Sup
 
 4. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
-
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
-5. Feature Importance dan Interpretabilitas
+6. Feature Importance dan Interpretabilitas
 Analisis feature importance pada model Random Forest dan Gradient Boosting berhasil mengidentifikasi fitur-fitur utama yang paling berpengaruh terhadap kualitas wine, yakni alcohol, volatile acidity, dan sulphates. Informasi ini sangat berharga bagi produsen untuk fokus mengontrol parameter kritis dalam proses produksi.
 
-6. Pencapaian Goals
+7. Pencapaian Goals
     - Model klasifikasi biner telah dibuat dan diuji menggunakan berbagai algoritma.
     - Perbandingan performa algoritma telah dilakukan secara menyeluruh dengan metrik evaluasi yang lengkap.
     - Feature importance diterapkan untuk mengidentifikasi fitur kunci yang mempengaruhi kualitas wine.
