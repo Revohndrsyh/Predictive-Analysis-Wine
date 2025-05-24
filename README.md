@@ -11,7 +11,7 @@ Penilaian kualitas wine secara tradisional masih mengandalkan panel ahli yang su
 
 - Bagaimana membangun model machine learning untuk memprediksi kualitas wine (baik vs buruk)?
 - Algoritma mana yang paling efektif untuk prediksi kualitas?
-- Bagaimana hasil prediksi dapat mendukung produsen dalam pengendalian mutu?
+- Bagaimana hasil prediksi dapat mendukung produsen dalam pengendalian kuaitas wine?
 - Bahan apa yang berpengaruh besar pada kualitas wine?
 
 ### Goals
