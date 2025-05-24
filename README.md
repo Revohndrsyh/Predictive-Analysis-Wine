@@ -94,21 +94,21 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
 Berhasil dibangun model klasifikasi biner yang memprediksi wine berkualitas baik (label 1) dan buruk (label 0) menggunakan parameter kimiawi sebagai fitur input. Model ini mengubah data kualitas numerik menjadi kelas biner sesuai kebutuhan klasifikasi, sehingga menyederhanakan proses prediksi dan evaluasi
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
 
-3. Perbandingan Algoritma
+2. Perbandingan Algoritma
 Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Support Vector Machine (SVM), dan Gradient Boosting.
     - Random Forest tampil sebagai model terbaik dengan akurasi tertinggi (92.1%) serta metrik precision, recall, dan F1-score kelas positif yang paling seimbang. Hal ini menunjukkan kemampuannya mengenali wine berkualitas baik dengan cukup baik.
     - Gradient Boosting dan SVM juga menunjukkan performa yang kompetitif, walaupun recall kelas positif masih di bawah ideal.
     - Logistic Regression memiliki akurasi cukup tinggi, namun kurang efektif dalam mengenali wine baik (recall rendah), sehingga kurang optimal untuk tujuan utama.
 
-4. Dukungan Prediksi untuk Pengendalian Kualitas
+3. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
 
 ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
-6. Feature Importance dan Interpretabilitas
+4. Feature Importance dan Interpretabilitas
 Analisis feature importance pada model Random Forest dan Gradient Boosting berhasil mengidentifikasi fitur-fitur utama yang paling berpengaruh terhadap kualitas wine, yakni alcohol, volatile acidity, dan sulphates. Informasi ini sangat berharga bagi produsen untuk fokus mengontrol parameter kritis dalam proses produksi.
 
-7. Pencapaian Goals
+5. Pencapaian Goals
     - Model klasifikasi biner telah dibuat dan diuji menggunakan berbagai algoritma.
     - Perbandingan performa algoritma telah dilakukan secara menyeluruh dengan metrik evaluasi yang lengkap.
     - Feature importance diterapkan untuk mengidentifikasi fitur kunci yang mempengaruhi kualitas wine.
