@@ -69,13 +69,40 @@ Berdasarkan pemeriksaan awal terhadap kondisi data, beberapa yang perlu diperhat
 
 ## Data Preparation
 
-1. Penghapusan Kolom Tidak Relevan Kolom Id dihapus karena merupakan identifier unik dan tidak memberikan informasi prediktif terhadap kualitas wine.
-2. Pengecekan data duplikat dan missing value.
-3. Variabel target quality yang awalnya memiliki nilai kontinu pada skala 0–10 diubah menjadi kelas biner:
-   - 1 untuk wine berkualitas baik dengan skor ≥ 7
-   - 0 untuk wine dengan skor < 7 Hal ini mempermudah proses klasifikasi dan evaluasi model dalam konteks proyek.
-4. Pembagian Data (Train-Test Split) Dataset dibagi menjadi data pelatihan dan pengujian dengan proporsi 80:20 menggunakan fungsi train_test_split dengan random_state=42 dan stratifikasi berdasarkan label agar distribusi kelas tetap seimbang.
-5. dilakukan analisis feature importance pada model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine. Analisis ini membantu memahami variabel mana yang memiliki kontribusi signifikan terhadap hasil prediksi, sehingga dapat memberikan insight penting bagi pengembangan produk dan proses kontrol kualitas. Misalnya, fitur seperti alcohol, volatile acidity, dan sulphates biasanya muncul sebagai variabel utama yang menentukan kualitas wine. Pemanfaatan feature importance tidak hanya memperkuat interpretabilitas model, tetapi juga membantu dalam proses feature selection untuk mengurangi kompleksitas model tanpa mengorbankan performa.
+1. **Penghapusan Kolom Tidak Relevan**  
+   Kolom `Id` dihapus karena merupakan identifier unik dan tidak memberikan informasi prediktif terhadap kualitas wine.
+
+2. **Pengecekan Data Duplikat dan Missing Value**  
+   - Memeriksa dan menghapus baris data duplikat untuk menghindari bias.  
+   - Mengecek nilai yang hilang (missing values) dan menanganinya sesuai kebutuhan (imputasi atau penghapusan).
+
+3. **Pengubahan Variabel Target**  
+   Variabel target `quality` yang awalnya memiliki nilai kontinu pada skala 0–10 diubah menjadi kelas biner:  
+   - `1` untuk wine berkualitas baik dengan skor ≥ 7  
+   - `0` untuk wine dengan skor < 7  
+   
+   Transformasi ini mempermudah proses klasifikasi dan evaluasi model dalam konteks proyek.
+
+4. **Eksplorasi Data Awal**  
+   - Melihat contoh data menggunakan `head()` untuk memahami struktur dan isi.  
+   - Memeriksa tipe data setiap kolom dengan `info()`.  
+   - Mendapatkan statistik deskriptif untuk kolom numerik menggunakan `describe()`.
+
+5. **Encoding Data Kategorikal**  
+   (Jika ada) Mengubah fitur kategorikal menjadi format numerik agar bisa digunakan oleh algoritma machine learning, dengan metode Label Encoding atau One-Hot Encoding.
+
+6. **Pemilihan Fitur (Feature Selection)**  
+   - Menghilangkan fitur yang tidak relevan atau konstan.  
+   - Memilih fitur penting berdasarkan korelasi dengan target atau pengetahuan domain.
+
+7. **Analisis Feature Importance**  
+   Dilakukan analisis feature importance menggunakan model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine.  
+   Fitur seperti `alcohol`, `volatile acidity`, dan `sulphates` biasanya muncul sebagai variabel utama yang menentukan kualitas wine.  
+   
+   Analisis ini tidak hanya memperkuat interpretabilitas model tetapi juga membantu proses feature selection untuk mengurangi kompleksitas model tanpa mengorbankan performa.
+
+8. **Pembagian Data (Train-Test Split)**  
+   Dataset dibagi menjadi data pelatihan dan pengujian dengan proporsi 80:20 menggunakan fungsi `train_test_split` dari Scikit-Learn, dengan `random_state=42` dan stratifikasi berdasarkan label agar distribusi kelas tetap seimbang.
 
 ## Modeling
 
