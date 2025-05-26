@@ -136,8 +136,7 @@ Berdasarkan analisis metrik evaluasi tersebut, Random Forest dipilih sebagai mod
     - Mempunyai akurasi tertinggi, menandakan tingkat prediksi benar yang terbaik secara keseluruhan.
     -  Precision dan recall yang cukup tinggi serta seimbang, menjamin model mampu mendeteksi wine berkualitas baik dengan tingkat kesalahan yang rendah.
     -  F1-score yang paling tinggi menunjukkan keseimbangan antara presisi dan sensitivitas, sangat penting dalam aplikasi pengendalian kualitas.
-
-Dengan model ini, produsen wine dapat memperoleh prediksi kualitas secara lebih cepat dan objektif, membantu pengendalian mutu secara konsisten.
+  Dengan model ini, produsen wine dapat memperoleh prediksi kualitas secara lebih cepat dan objektif, membantu pengendalian mutu secara konsisten.
 
 3. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
