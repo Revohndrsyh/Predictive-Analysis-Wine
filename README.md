@@ -122,7 +122,7 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
     - Precision mengukur seberapa akurat prediksi positif yang dilakukan oleh model, yaitu proporsi prediksi positif yang benar-benar positif. Metrik ini penting saat false positive harus diminimalkan, misalnya untuk menghindari salah mengklasifikasikan wine buruk sebagai baik.
     - Recall (sensitivitas) mengukur kemampuan model dalam mendeteksi semua kasus positif sebenarnya, yaitu proporsi data positif yang berhasil dikenali oleh model. Recall penting ketika kita tidak ingin melewatkan wine berkualitas baik yang sebenarnya ada.
     - F1-score adalah rata-rata harmonis antara precision dan recall, memberikan ukuran keseimbangan antara keduanya. F1-score digunakan ketika dibutuhkan trade-off antara precision dan recall yang seimbang.
-      ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
+   ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
 
 2. Perbandingan Algoritma
 Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Support Vector Machine (SVM), dan Gradient Boosting.
