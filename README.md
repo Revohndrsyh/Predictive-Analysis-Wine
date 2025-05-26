@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Revo Hendriansyah
+# Laporan Proyek Machine Learning Terapan - Revo Hendriansyah
 
 ## Domain Proyek
 
