@@ -122,13 +122,21 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
     - Precision mengukur seberapa akurat prediksi positif yang dilakukan oleh model, yaitu proporsi prediksi positif yang benar-benar positif. Metrik ini penting saat false positive harus diminimalkan, misalnya untuk menghindari salah mengklasifikasikan wine buruk sebagai baik.
     - Recall (sensitivitas) mengukur kemampuan model dalam mendeteksi semua kasus positif sebenarnya, yaitu proporsi data positif yang berhasil dikenali oleh model. Recall penting ketika kita tidak ingin melewatkan wine berkualitas baik yang sebenarnya ada.
     - F1-score adalah rata-rata harmonis antara precision dan recall, memberikan ukuran keseimbangan antara keduanya. F1-score digunakan ketika dibutuhkan trade-off antara precision dan recall yang seimbang.
-   ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
+
+![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png?raw=true)
 
 2. Perbandingan Algoritma
 Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Support Vector Machine (SVM), dan Gradient Boosting.
     - Random Forest tampil sebagai model terbaik dengan akurasi tertinggi (92.1%) serta metrik precision, recall, dan F1-score kelas positif yang paling seimbang. Hal ini menunjukkan kemampuannya mengenali wine berkualitas baik dengan cukup baik.
     - Gradient Boosting dan SVM juga menunjukkan performa yang kompetitif, walaupun recall kelas positif masih di bawah ideal.
     - Logistic Regression memiliki akurasi cukup tinggi, namun kurang efektif dalam mengenali wine baik (recall rendah), sehingga kurang optimal untuk tujuan utama.
+
+3. Kesimpulan dan Pemilihan Model
+Berdasarkan analisis metrik evaluasi tersebut, Random Forest dipilih sebagai model terbaik untuk prediksi kualitas wine karena:
+  - Mempunyai akurasi tertinggi, menandakan tingkat prediksi benar yang terbaik secara keseluruhan.
+  - Precision dan recall yang cukup tinggi serta seimbang, menjamin model mampu mendeteksi wine berkualitas baik dengan tingkat kesalahan yang rendah.
+  - F1-score yang paling tinggi menunjukkan keseimbangan antara presisi dan sensitivitas, sangat penting dalam aplikasi pengendalian kualitas.
+Dengan model ini, produsen wine dapat memperoleh prediksi kualitas secara lebih cepat dan objektif, membantu pengendalian mutu secara konsisten.
 
 3. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
