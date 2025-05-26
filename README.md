@@ -136,17 +136,18 @@ Berdasarkan analisis metrik evaluasi tersebut, Random Forest dipilih sebagai mod
     - Mempunyai akurasi tertinggi, menandakan tingkat prediksi benar yang terbaik secara keseluruhan.
     -  Precision dan recall yang cukup tinggi serta seimbang, menjamin model mampu mendeteksi wine berkualitas baik dengan tingkat kesalahan yang rendah.
     -  F1-score yang paling tinggi menunjukkan keseimbangan antara presisi dan sensitivitas, sangat penting dalam aplikasi pengendalian kualitas.
-  Dengan model ini, produsen wine dapat memperoleh prediksi kualitas secara lebih cepat dan objektif, membantu pengendalian mutu secara konsisten.
 
-3. Dukungan Prediksi untuk Pengendalian Kualitas
+    Dengan model ini, produsen wine dapat memperoleh prediksi kualitas secara lebih cepat dan objektif, membantu pengendalian mutu secara konsisten.
+
+4. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
 
   ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
-4. Feature Importance dan Interpretabilitas
+5. Feature Importance dan Interpretabilitas
 Analisis feature importance pada model Random Forest dan Gradient Boosting berhasil mengidentifikasi fitur-fitur utama yang paling berpengaruh terhadap kualitas wine, yakni alcohol, volatile acidity, dan sulphates. Informasi ini sangat berharga bagi produsen untuk fokus mengontrol parameter kritis dalam proses produksi.
 
-5. Pencapaian Goals
+6. Pencapaian Goals
     - Model klasifikasi biner telah dibuat dan diuji menggunakan berbagai algoritma.
     - Perbandingan performa algoritma telah dilakukan secara menyeluruh dengan metrik evaluasi yang lengkap.
     - Feature importance diterapkan untuk mengidentifikasi fitur kunci yang mempengaruhi kualitas wine.
