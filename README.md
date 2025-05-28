@@ -33,7 +33,7 @@ Penilaian kualitas wine secara tradisional masih mengandalkan panel ahli yang su
 
 ## Data Understanding
 
-1. **Eksplorasi Data Awal**  
+1. Eksplorasi Data Awal
    - Melihat contoh data menggunakan `head()` untuk memahami struktur dan isi.  
    - Memeriksa tipe data setiap kolom dengan `info()`.  
    - Mendapatkan statistik deskriptif untuk kolom numerik menggunakan `describe()`.
@@ -88,8 +88,8 @@ Berdasarkan pemeriksaan awal terhadap kondisi data, beberapa yang perlu diperhat
    
    Transformasi ini mempermudah proses klasifikasi dan evaluasi model dalam konteks proyek.
 
-4. **Encoding Data Kategorikal**  
-   (Jika ada) Mengubah fitur kategorikal menjadi format numerik agar bisa digunakan oleh algoritma machine learning, dengan metode Label Encoding atau One-Hot Encoding.
+4. **Standardisasi fitur**
+Data fitur (X) dinormalisasi menggunakan StandardScaler dari scikit-learn. Proses ini mengubah setiap fitur sehingga memiliki rata-rata (mean) 0 dan standar deviasi (standard deviation) 1. Standardisasi ini membantu algoritma pembelajaran untuk bekerja lebih baik dan lebih cepat konvergen, terutama pada model yang sensitif terhadap skala fitur.
 
 6. **Pembagian Data (Train-Test Split)**  
    Dataset dibagi menjadi data pelatihan dan pengujian dengan proporsi 80:20 menggunakan fungsi `train_test_split` dari Scikit-Learn, dengan `random_state=42` dan stratifikasi berdasarkan label agar distribusi kelas tetap seimbang.
