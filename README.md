@@ -91,19 +91,9 @@ Berdasarkan pemeriksaan awal terhadap kondisi data, beberapa yang perlu diperhat
 4. **Encoding Data Kategorikal**  
    (Jika ada) Mengubah fitur kategorikal menjadi format numerik agar bisa digunakan oleh algoritma machine learning, dengan metode Label Encoding atau One-Hot Encoding.
 
-5. **Pemilihan Fitur (Feature Selection)**  
-   - Menghilangkan fitur yang tidak relevan atau konstan.  
-   - Memilih fitur penting berdasarkan korelasi dengan target atau pengetahuan domain.
-
-6. **Analisis Feature Importance**  
-   Dilakukan analisis feature importance menggunakan model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine.  
-   Fitur seperti `alcohol`, `volatile acidity`, dan `sulphates` biasanya muncul sebagai variabel utama yang menentukan kualitas wine.  
-   
-   Analisis ini tidak hanya memperkuat interpretabilitas model tetapi juga membantu proses feature selection untuk mengurangi kompleksitas model tanpa mengorbankan performa.
-
-7. **Pembagian Data (Train-Test Split)**  
+6. **Pembagian Data (Train-Test Split)**  
    Dataset dibagi menjadi data pelatihan dan pengujian dengan proporsi 80:20 menggunakan fungsi `train_test_split` dari Scikit-Learn, dengan `random_state=42` dan stratifikasi berdasarkan label agar distribusi kelas tetap seimbang.
-
+   
 ## Modeling
 
 Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualitas wine berdasarkan fitur kimiawi. Berikut penjelasan singkat tiap algoritma dan parameter utamanya:
@@ -144,10 +134,14 @@ Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat me
 
   ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png?raw=true)
 
-5. Feature Importance dan Interpretabilitas
+5. Feature Importance dan Interpretabilitas  
+   Dilakukan analisis feature importance menggunakan model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine.  
+   Fitur seperti `alcohol`, `volatile acidity`, dan `sulphates` biasanya muncul sebagai variabel utama yang menentukan kualitas wine.  
+   
+   Analisis ini tidak hanya memperkuat interpretabilitas model tetapi juga membantu proses feature selection untuk mengurangi kompleksitas model tanpa mengorbankan performa.
 Analisis feature importance pada model Random Forest dan Gradient Boosting berhasil mengidentifikasi fitur-fitur utama yang paling berpengaruh terhadap kualitas wine, yakni alcohol, volatile acidity, dan sulphates. Informasi ini sangat berharga bagi produsen untuk fokus mengontrol parameter kritis dalam proses produksi.
 
-6. Pencapaian Goals
+7. Pencapaian Goals
     - Model klasifikasi biner telah dibuat dan diuji menggunakan berbagai algoritma.
     - Perbandingan performa algoritma telah dilakukan secara menyeluruh dengan metrik evaluasi yang lengkap.
     - Feature importance diterapkan untuk mengidentifikasi fitur kunci yang mempengaruhi kualitas wine.
