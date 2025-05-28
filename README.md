@@ -33,6 +33,11 @@ Penilaian kualitas wine secara tradisional masih mengandalkan panel ahli yang su
 
 ## Data Understanding
 
+1. **Eksplorasi Data Awal**  
+   - Melihat contoh data menggunakan `head()` untuk memahami struktur dan isi.  
+   - Memeriksa tipe data setiap kolom dengan `info()`.  
+   - Mendapatkan statistik deskriptif untuk kolom numerik menggunakan `describe()`.
+
 Dataset yang digunakan dalam proyek ini adalah Wine Quality Dataset yang bersumber dari platform publik Kaggle dan dapat diunduh di tautan berikut sumber datanya : [Wine Quality Dataset](https://www.kaggle.com/datasets/yasserh/wine-quality-dataset)
 
 ## Informasi Dataset
@@ -83,25 +88,20 @@ Berdasarkan pemeriksaan awal terhadap kondisi data, beberapa yang perlu diperhat
    
    Transformasi ini mempermudah proses klasifikasi dan evaluasi model dalam konteks proyek.
 
-4. **Eksplorasi Data Awal**  
-   - Melihat contoh data menggunakan `head()` untuk memahami struktur dan isi.  
-   - Memeriksa tipe data setiap kolom dengan `info()`.  
-   - Mendapatkan statistik deskriptif untuk kolom numerik menggunakan `describe()`.
-
-5. **Encoding Data Kategorikal**  
+4. **Encoding Data Kategorikal**  
    (Jika ada) Mengubah fitur kategorikal menjadi format numerik agar bisa digunakan oleh algoritma machine learning, dengan metode Label Encoding atau One-Hot Encoding.
 
-6. **Pemilihan Fitur (Feature Selection)**  
+5. **Pemilihan Fitur (Feature Selection)**  
    - Menghilangkan fitur yang tidak relevan atau konstan.  
    - Memilih fitur penting berdasarkan korelasi dengan target atau pengetahuan domain.
 
-7. **Analisis Feature Importance**  
+6. **Analisis Feature Importance**  
    Dilakukan analisis feature importance menggunakan model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine.  
    Fitur seperti `alcohol`, `volatile acidity`, dan `sulphates` biasanya muncul sebagai variabel utama yang menentukan kualitas wine.  
    
    Analisis ini tidak hanya memperkuat interpretabilitas model tetapi juga membantu proses feature selection untuk mengurangi kompleksitas model tanpa mengorbankan performa.
 
-8. **Pembagian Data (Train-Test Split)**  
+7. **Pembagian Data (Train-Test Split)**  
    Dataset dibagi menjadi data pelatihan dan pengujian dengan proporsi 80:20 menggunakan fungsi `train_test_split` dari Scikit-Learn, dengan `random_state=42` dan stratifikasi berdasarkan label agar distribusi kelas tetap seimbang.
 
 ## Modeling
