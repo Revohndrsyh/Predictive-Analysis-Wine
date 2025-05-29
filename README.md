@@ -113,7 +113,7 @@ Pada tahap pemodelan, empat algoritma klasifikasi diuji untuk memprediksi kualit
     - Recall (sensitivitas) mengukur kemampuan model dalam mendeteksi semua kasus positif sebenarnya, yaitu proporsi data positif yang berhasil dikenali oleh model. Recall penting ketika kita tidak ingin melewatkan wine berkualitas baik yang sebenarnya ada.
     - F1-score adalah rata-rata harmonis antara precision dan recall, memberikan ukuran keseimbangan antara keduanya. F1-score digunakan ketika dibutuhkan trade-off antara precision dan recall yang seimbang.
 
-![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Perbandingan%20Model.png)
+![alt text](https://raw.github.com/Revohndrsyh/Predictive-Analysis-Wine/main/Perbandingan%20Model.png)
 
 2. Perbandingan Algoritma
 Empat algoritma klasifikasi diuji, yaitu Logistic Regression, Random Forest, Support Vector Machine (SVM), dan Gradient Boosting.
@@ -132,7 +132,7 @@ Berdasarkan analisis metrik evaluasi tersebut, Random Forest dipilih sebagai mod
 4. Dukungan Prediksi untuk Pengendalian Kualitas
 Model yang dikembangkan memberikan prediksi cepat dan objektif sehingga dapat membantu produsen dalam pengendalian mutu wine secara lebih efisien dan konsisten, menggantikan metode tradisional yang subjektif dan memakan waktu.
 
-  ![alt text](https://github.com/Revohndrsyh/Predictive-Analysis-Wine/blob/main/Feature%20Importance.png)
+  ![alt text](https://raw.github.com/Revohndrsyh/Predictive-Analysis-Wine/main/Feature%20Importance.png)
 
 5. Feature Importance dan Interpretabilitas  
    Dilakukan analisis feature importance menggunakan model berbasis pohon seperti Random Forest dan Gradient Boosting untuk mengidentifikasi fitur-fitur yang paling berpengaruh dalam memprediksi kualitas wine.  
